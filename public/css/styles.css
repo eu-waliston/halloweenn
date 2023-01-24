@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: Green--Fuz;
+    src: url(green_fuz.otf);
+}
+
+
+:root {
+    --site--font:  'Poppins', sans-serif;
+    --theme--font: 'Green--Fuz', Green--Fuz;
+}
+
+.fundo__principal {
+    background-image: url("../images/fundo.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    float: right;
+    margin-right: 15%;
+    margin-top: 5%;
+    gap: 50px;
+}
+
+.nav--item {
+    position: relative;
+    top: 5%;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffff;
+    font-family: var(--site--font);
+}
+
+input {
+    height: 50px;
+    top: -30%;
+    position: relative;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+input:hover {
+    cursor: pointer;
+    
+}
+
+
+
+.bi {
+    position: relative;
+    top: -29%;
+    left: -2%;
+    color: #fff;
+    font-size: 18px;
+    background-color: rgb(216, 195, 8);
+    padding: 14px;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
