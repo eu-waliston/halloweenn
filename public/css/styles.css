@@ -76,3 +76,53 @@ input:hover {
     cursor: pointer;
 }
 
+/* RIGHT SIDE */
+.right__side {
+    float: right;
+    position: relative;
+    top: 35%;
+    left: 40%;
+
+}
+
+.right__h1_1, .right__h1_2 {
+    font-size: 100px;
+    font-family: var(--theme--font);
+    letter-spacing: 10px;
+}
+
+.right__h1_1 {
+    color: #fff;
+}
+.right__h1_2 {
+    color: rgb(216, 195, 8) ;
+}
+
+.right__p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--site--font);
+    color:#fff;
+    position: relative;
+    margin-top: 5%;
+}
+.right__btn {
+    position: relative;
+    margin-top: 10%;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid rgb(216, 195, 8);
+    background-color: rgb(216, 195, 8);
+    margin-left: 70%;
+}
+
+.right__btn:hover {
+    transition: all 0.9s;
+    background-color: transparent;
+    border: 1px solid  rgb(216, 195, 8);
+    color: rgb(216, 195, 8);
+} 
