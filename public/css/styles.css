@@ -1,128 +1,148 @@
+/*------- GLOBAL CONFIGS ----------*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
-    font-family: Green--Fuz;
-    src: url(green_fuz.otf);
+  font-family: Green--Fuz;
+  src: url(green_fuz.otf);
 }
-
 
 :root {
-    --site--font:  'Poppins', sans-serif;
-    --theme--font: 'Green--Fuz', Green--Fuz;
+  --site--font: "Poppins", sans-serif;
+  --theme--font: "Green--Fuz", Green--Fuz;
 }
-
+/*-------- BASE -----------------*/
 .fundo__principal {
-    background-image: url("../images/fundo.png");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+  background-image: url("../images/fundo.png");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 
-/* NAVBAR */
+/*------------- NAVBAR ------------*/
 .navbar {
-    display: flex;
-    float: right;
-    margin-right: 15%;
-    margin-top: 5%;
-    gap: 50px;
+  display: flex;
+  float: right;
+  margin-right: 15%;
+  margin-top: 5%;
+  gap: 50px;
 }
 
 .nav--item {
-    position: relative;
-    top: 5%;
-    list-style: none;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #ffff;
-    font-family: var(--site--font);
+  position: relative;
+  top: 5%;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffff;
+  font-family: var(--site--font);
 }
 
 input {
-    height: 50px;
-    top: -30%;
-    position: relative;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-
+  height: 50px;
+  top: -30%;
+  position: relative;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 input:hover {
-    cursor: pointer;
-    
+  cursor: pointer;
 }
 
+.bi-search {
+  position: relative;
+  top: -29%;
+  left: -2%;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgb(216, 195, 8);
+  padding: 14px;
 
-
-.bi {
-    position: relative;
-    top: -29%;
-    left: -2%;
-    color: #fff;
-    font-size: 18px;
-    background-color: rgb(216, 195, 8);
-    padding: 14px;
-
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: rgb(216, 195, 8);
+  cursor: pointer;
 }
 
-/* RIGHT SIDE */
+/*----------------------- RIGHT SIDE-------------------- */
 .right__side {
-    float: right;
-    position: relative;
-    top: 35%;
-    left: 40%;
-
+  float: right;
+  position: relative;
+  top: 35%;
+  left: 40%;
 }
 
-.right__h1_1, .right__h1_2 {
-    font-size: 100px;
-    font-family: var(--theme--font);
-    letter-spacing: 10px;
+.right__h1_1,
+.right__h1_2 {
+  font-size: 100px;
+  font-family: var(--theme--font);
+  letter-spacing: 10px;
 }
 
 .right__h1_1 {
-    color: #fff;
+  color: #fff;
 }
 .right__h1_2 {
-    color: rgb(216, 195, 8) ;
+  color: rgb(216, 195, 8);
 }
 
 .right__p {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: var(--site--font);
-    color:#fff;
-    position: relative;
-    margin-top: 5%;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--site--font);
+  color: #fff;
+  position: relative;
+  margin-top: 5%;
 }
 .right__btn {
-    position: relative;
-    margin-top: 10%;
-    height: 50px;
-    width: 150px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fff;
-    border: 1px solid rgb(216, 195, 8);
-    background-color: rgb(216, 195, 8);
-    margin-left: 70%;
+  position: relative;
+  margin-top: 10%;
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid rgb(216, 195, 8);
+  background-color: rgb(216, 195, 8);
+  margin-left: 70%;
 }
 
 .right__btn:hover {
-    transition: all 0.9s;
-    background-color: transparent;
-    border: 1px solid  rgb(216, 195, 8);
-    color: rgb(216, 195, 8);
-} 
+  transition: all 0.9s;
+  background-color: transparent;
+  border: 1px solid rgb(216, 195, 8);
+  color: rgb(216, 195, 8);
+  cursor: pointer;
+}
+
+.itens {
+  position: fixed;
+  display: flex;
+  margin-left: 18%;
+}
+
+.item1 {
+  position: relative;
+  margin-top: 70px;
+  margin-left: 15px;
+  font-size: 40px;
+  color: #fff;
+}
+
+/* -------- LEFT SIDE -------- */
